@@ -18,7 +18,7 @@ Please note: **Core documentation is deeply buried.** Explore the nested directo
 | L1    | Metadata Refraction & Signposting   | `README.cff`, `.well`    | 🧭 Partial    |
 | L2    | Functional Illusions                | `index.html`, `favicon`  | ✨ Active     |
 | L3    | Symbolic Payload                    | `ukubona.png`, `🏝️.md`    | 🪡 Hidden     |
-| L4    | Recursive Entrypoints               | `6-kitabo/ensi/ukubona/` | 🔑 Intentional |
+| L4    | Recursive Entrypoints               | `contorno/ensi/ukuzula/` | 🔑 Intentional |
 
 ---
 
