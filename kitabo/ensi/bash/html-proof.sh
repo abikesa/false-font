@@ -11,3 +11,4 @@ bundle exec htmlproofer --allow-hash-href \
 # flick 20250409213603-Rmxp
 # flick 20250409214209-ajNo
 # flick 20250409214626-IAMj
+# flick 20250409230607-WFiC
