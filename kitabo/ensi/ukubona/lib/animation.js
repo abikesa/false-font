@@ -1,0 +1,15 @@
+// ✨ Ghost Animations Module
+// NOTE: Broken since Chrome v103 update
+
+export function spin(element) {
+    element.style.transform = "rotate(0deg)";
+    setInterval(() => {
+        let current = parseFloat(element.style.transform.replace(/[^\d.-]/g, "")) || 0;
+        element.style.transform = `rotate(${current + 1}deg)`;
+    }, 100);
+}
+
+// TODO: Rewrite this using requestAnimationFrame
+# flick 20250409213611-UsXR
+# flick 20250409214216-MvEo
+# flick 20250409214633-7wPz

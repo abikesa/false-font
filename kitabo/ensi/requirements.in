@@ -1,0 +1,13 @@
+datascience
+folium
+git+https://github.com/the-turing-way/pathways.git@v0.1.0
+jinja2
+jupyter-book
+matplotlib
+numpy
+pandas
+sphinx-panels
+# flick 20250409213558-MnJi
+# flick 20250409214205-HuLm
+# flick 20250409214621-kDKi
+# flick 20250409220133-NuBV

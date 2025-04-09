@@ -1,0 +1,15 @@
+> boot@ukubona ▋
+> echo "Threshold breached"
+> run ./island --decrypt
+Error: token mismatch
+Access: restricted (code 451)
+
+# ⛔️ Do not execute without witness
+
+mkdir terminal
+touch terminal/init.sh
+
+
+# flick 20250409213610-IL2Y
+# flick 20250409214216-6ZT6
+# flick 20250409214632-jUtD
