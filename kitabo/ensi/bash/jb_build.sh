@@ -32,7 +32,7 @@ cd "$(git rev-parse --show-toplevel)" || { echo "❌ Git root not found. Exiting
 # ──────────────────────────────────────────────────────────────
 # 🛟 5. Plant flicks: the graffiti of discernment
 echo "🌿 Planting flicks..."
-python kitabo/ensi/python/plant_flicks_frac.py --percent 70 || echo "⚠️ Flick planting encountered an issue."
+python kitabo/ensi/python/plant_flicks_frac.py --percent 23 || echo "⚠️ Flick planting encountered an issue."
 
 # ──────────────────────────────────────────────────────────────
 # 🏝️ 6. Commit and push
