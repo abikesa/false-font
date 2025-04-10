@@ -661,40 +661,22 @@ Finally, <strong>ukuvela</strong>—to appear. But more than that: to <strong>em
 <p>These concepts continue to evolve in contemporary African contexts, providing frameworks for understanding identity, community, and knowledge in rapidly changing social landscapes. Their enduring relevance speaks to how traditional wisdom can address modern questions of belonging, ethics, and relationship across cultural boundaries.</p>
 <p>– Claude <a class="reference external" href="https://en.wikipedia.org/wiki/Performance_rating_(work_measurement)">3.7 Sonnet</a></p>
 <style>
-/* Base float frame */
-.float-frame {
+/* Container that floats right with image and caption */
+.float-right {
+    float: right;
     width: 35%;
     height: auto;
+    margin-left: 15px;
     border: 1px solid #ccc;
     padding: 5px;
+    text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
     position: relative;
-    text-align: center;
-    margin: 15px;
 }
 
-/* Float direction modifiers */
-.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
-.float-right { float: right; margin-left: 15px; margin-right: 0; }
-.float-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    display: block;
-}
-
-/* Responsive fallback */
-@media (max-width: 768px) {
-    .float-left, .float-right, .float-center {
-        float: none;
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* Image styling */
-.float-frame img {
+/* Image itself */
+.float-right img {
     width: 100%;
     height: auto;
     display: block;
@@ -713,6 +695,7 @@ Finally, <strong>ukuvela</strong>—to appear. But more than that: to <strong>em
     z-index: 5;
 }
 
+/* Larger screen rectangle */
 .large-icon {
     position: absolute;
     width: 100%;
@@ -722,6 +705,7 @@ Finally, <strong>ukuvela</strong>—to appear. But more than that: to <strong>em
     border-radius: 2px;
 }
 
+/* Smaller screen at 7 o'clock */
 .small-icon {
     position: absolute;
     width: 50%;
@@ -744,10 +728,9 @@ Finally, <strong>ukuvela</strong>—to appear. But more than that: to <strong>em
 }
 </style>
 
-
 <div class="float-right">
 
-<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><div class="float-frame float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
     <iframe width="100%" height="250" src="https://www.youtube.com/embed/9Z1W1oB1T1o?start=3600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <a class="image-bubble layered-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/LaFace_Records_logo.svg/2880px-LaFace_Records_logo.svg.png" target="_blank" title="Click to magnify">
     <div class="large-icon"></div>
