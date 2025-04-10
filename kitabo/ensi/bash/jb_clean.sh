@@ -32,6 +32,9 @@ dirs=(
 # Create directories under _build/html
 for d in "${dirs[@]}"; do
   mkdir -p "_build/html/$d"
-  cp -r "$d/"* "_build/html/$d/" 2>/dev/null
+  if compgen -G "$d/*" > /dev/null; then
+    cp -r "$d/"* "_build/html/$d/"
+  fi
 done
+
 
