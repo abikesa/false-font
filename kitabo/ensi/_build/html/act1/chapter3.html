@@ -547,29 +547,107 @@ There is a scene from our epistemic theatre—the Raft scene, the moment of cruc
 <p>X.<br />
 We end, as all things must, on the Island. Or rather, the idea of it. Is the Island real? Or is it, as we have long suspected, a lie we sail toward—a hologram of harmony meant to seduce us into motion? In 2026, when America throws its parties and raises its flags, some will believe they’ve arrived. But the rest of us—those who have walked through palaces but been denied coffee—know better. The Island is not yet here. Perhaps it never will be. But we sail not because we are naïve, but because we are not yet finished. Josephine sang. We write. And when we do, they hear it all over the world.</p>
 <style>
-.float-right {
-    float: right;
+/* Base float frame */
+.float-frame {
     width: 35%;
     height: auto;
-    margin-left: 15px;
     border: 1px solid #ccc;
     padding: 5px;
-    text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.float-right p {
-    text-align: left;
-    font-size: 12px;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
 }
 
+/* Responsive fallback */
+@media (max-width: 768px) {
+    .float-left, .float-right, .float-center {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
+}
 </style>
 
-<div class="float-right">
-     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/JMrBFka40_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p><i>Personalized Medicine, National Identity, and Trump</i>. With Trevor Noah and Company. </p>
-</div><p>Fantastic and provocative question—and you’re absolutely right to frame it as an inquiry not just about aesthetics, but about <strong>cultural standard-setting</strong>: who shifted the Overton window of performance attire so drastically that <em>modesty now seems transgressive</em>?</p>
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+    <iframe width="100%" height="250" src="https://www.youtube.com/embed/JMrBFka40_0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a class="image-bubble layered-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/LaFace_Records_logo.svg/2880px-LaFace_Records_logo.svg.png" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+</a>
+<figure class="align-default" id="figures-cgbest">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Personalized Medicine, National Identity, and Trump</i>. With Trevor Noah and Company</span><a class="headerlink" href="#figures-cgbest" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Fantastic and provocative question—and you’re absolutely right to frame it as an inquiry not just about aesthetics, but about <strong>cultural standard-setting</strong>: who shifted the Overton window of performance attire so drastically that <em>modesty now seems transgressive</em>?</p>
 <p>Let’s start bluntly: <strong>Josephine Baker</strong> was <em>way ahead</em> of the curve. In the 1920s, she danced in Paris wearing little more than a skirt made of bananas. She was not just undressed—she was <em>undressing colonial gaze</em>, racial taboo, and the Western fascination with Black bodies. Baker used nudity not as a sex symbol per se, but as a hybrid of satire, spectacle, and sovereignty. If there’s an Ur-mother of modern-stage exposure, it’s her.</p>
 <p>Fast-forward past the war eras, and we start seeing something new with <strong>Tina Turner</strong>. Though she didn’t go fully minimalist, her fierce legs, short skirts, and raw energy <em>feminized power without retreating into demureness</em>. She didn’t strip—but she didn’t need to. Her <em>skin was agency</em>.</p>
 <p>But if we’re talking about the <strong>true transition to bare-essentials-as-norm</strong>, then yes, we land decisively in the <strong>Madonna</strong> era.</p>
@@ -583,51 +661,93 @@ We end, as all things must, on the Island. Or rather, the idea of it. Is the Isl
 And <strong>Cardi B and Doja Cat</strong> are living in the aftermath, where <em>to cover up would be more radical than to reveal</em>.</p>
 <p>The stage isn’t undressed. It’s just dressed in skin now.</p>
 <style>
-/* Wikipedia-style infobox */
-.wiki-frame {
-    float: right;
+/* Base float frame */
+.float-frame {
     width: 35%;
-    margin-left: 15px;
-    border: 1px solid #a2a9b1;
-    padding: 10px;
-    background-color: #f8f9fa;
-    font-size: 14px;
-    font-family: sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.wiki-frame h3 {
-    background-color: #eaecf0;
-    color: #000;
-    text-align: center;
+    height: auto;
+    border: 1px solid #ccc;
     padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 2px solid #a2a9b1;
-    margin-top: 0;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.wiki-frame pre {
-    white-space: pre-wrap;
-    background-color: #fff;
-    padding: 8px;
-    border: 1px solid #a2a9b1;
-    font-family: monospace;
-    overflow-x: auto;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
 }
 
-/* Make the frame responsive */
+/* Responsive fallback */
 @media (max-width: 768px) {
-    .wiki-frame {
+    .float-left, .float-right, .float-center {
         float: none;
         width: 100%;
-        margin-left: 0;
+        margin: 10px 0;
     }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
 }
 </style>
 
-<!-- Wikipedia-style Code Box -->
-<div class="wiki-frame"><div class="cell tag_hide-input docutils container">
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
@@ -763,8 +883,10 @@ And <strong>Cardi B and Doja Cat</strong> are living in the aftermath, where <em
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Self-Similar Micro-Decisions&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Examination of Feminism&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="c1"># ✅ Save the actual image *after* drawing it</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;../figures/feminism.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+    <span class="c1"># plt.show()</span>
 
 <span class="c1"># Run the visualization</span>
 <span class="n">visualize_nn</span><span class="p">()</span>
@@ -773,15 +895,21 @@ And <strong>Cardi B and Doja Cat</strong> are living in the aftermath, where <em
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/c3770e80848ab1263f6c0dc8e85b61888573e04c531cdf88e4aee037fff2a86e.png" src="../_images/c3770e80848ab1263f6c0dc8e85b61888573e04c531cdf88e4aee037fff2a86e.png" />
+<img alt="../_images/6a85acd7a36dbe405a321139f4e310e55de6f1b24b99723f6c5d6419e4f7bcc5.png" src="../_images/6a85acd7a36dbe405a321139f4e310e55de6f1b24b99723f6c5d6419e4f7bcc5.png" />
 </div>
 </div>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+  <a class="image-bubble layered-icon" href="..figures/feminism.jpeg" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+  </a>
+<figure class="align-default" id="figures-feminism">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">History is a fractal unfolding of entropy and order.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Feminism viewed from the perspective of the most celebrated female singers reveals a compelling pattern</span><a class="headerlink" href="#figures-feminism" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</div>
 </div>
 <p><strong>The Semiotics of Skin: A Fivefold Unveiling of the Feminine in Performance</strong></p>
 <p><strong>I.</strong><br />
@@ -899,8 +1027,13 @@ So let the others chase virality. Let them monetize liberation. Let them misinte
 <p>That, my friend, is <em>Ukusoma</em>.<br />
 And it will not be televised.</p>
 <hr class="docutils" />
-<iframe src="../myhtml/ukusoma.html" width="100%" height="600px" style="border:none;"></iframe>
-<p><strong>Josephine Baker: The Radical Choreography of a Life</strong></p>
+<iframe src="../myhtml/ukusoma.html" width="100%" height="600px" style="border:none;"></iframe><figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Poetry is a fractal unfolding of entropy and order.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div><p><strong>Josephine Baker: The Radical Choreography of a Life</strong></p>
 <p><strong>I.</strong><br />
 She danced, yes—but Josephine Baker’s real performance was a <em>life</em>. Onstage she was electric, magnetic, and wildly ungovernable. But offstage, she composed something more enduring than choreography: she curated a philosophical experiment in human dignity. Through movement, motherhood, and militant love, she refused the colonial categories into which she was born.</p>
 <p><strong>II.</strong><br />
