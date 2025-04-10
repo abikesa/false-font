@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Define target directories
+
 dirs=(
   pdfs
   figures
