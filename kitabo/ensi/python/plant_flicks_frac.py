@@ -23,7 +23,7 @@ EXCLUDED_NAMES = {
     ".git", ".ipynb_checkpoints", "__pycache__", "_build",
     "_toc.yml", "_config.yml", ".DS_Store"
 }
-EXCLUDED_SUFFIXES = {".ipynb", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".html"}
+EXCLUDED_SUFFIXES = {".ipynb", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".html", ".sh", ".py"}
 
 def random_tag():
     return ''.join(random.choices(string.ascii_letters + string.digits, k=4))
