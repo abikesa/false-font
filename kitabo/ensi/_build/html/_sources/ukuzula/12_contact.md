@@ -1,0 +1,12 @@
+# 📬 Contact, Hosting, Legal
+
+- Email: ukubona.llc@gmail.com
+- GitHub: https://ukubona.github.io
+- LLC State: [To be filled in]
+- EIN: [To be assigned]# flick 20250409213605-GXpD
+# flick 20250409214211-jVzm
+# flick 20250409214627-Ljfe
+# flick 20250409220131-EiUD
+# flick 20250409234311-wAvt
+# flick 20250410003324-sg2w
+# flick 20250410004049-KjSD
