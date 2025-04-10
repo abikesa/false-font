@@ -541,15 +541,18 @@ document.write(`
 <style>
 /* Base float frame */
 .float-frame {
-    width: 15%;
+    width: fit-content;
+    max-width: 12%;
+    min-width: 6%;
     height: auto;
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 2px 6px;
     font-size: 12px;
     background-color: #f9f9f9;
     position: relative;
     text-align: center;
     margin: 15px;
+    white-space: nowrap;
 }
 
 /* Float direction modifiers */
@@ -566,8 +569,9 @@ document.write(`
 @media (max-width: 768px) {
     .float-left, .float-right, .float-center {
         float: none;
-        width: 100%;
+        width: 100% !important;
         margin: 10px 0;
+        white-space: normal;
     }
 }
 
@@ -624,8 +628,6 @@ document.write(`
 
 
 <div class="float-frame float-right">
-
-<!-- Your empty Python code cell goes directly above this block in the .ipynb file -->
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="../act2/chapter1.html#prometheus"><span class="std std-ref">Prometheus</span></a></p>
