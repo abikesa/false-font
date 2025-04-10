@@ -1,8 +1,11 @@
 #!/bin/bash
 
-# Purpose: Copy key content folders into _build/html for final site packaging
+# Summary: Copy select directories—including dotfiles—into _build/html/, handling edge cases.
 
-# List of directories to include in the build
+# Enable safe globbing for hidden files and empty folders
+shopt -s dotglob nullglob
+
+# List of directories to copy
 dirs=(
   pdfs
   figures
@@ -30,27 +33,29 @@ dirs=(
   digestivo
 )
 
-# Enable dotfile globbing so .gitignore, etc., are included
-shopt -s dotglob nullglob
+echo "🛠 Copying directories to _build/html"
 
-# Create target folders and copy contents (if any)
+# Loop through and copy
 for d in "${dirs[@]}"; do
-  src="$d"
+  src="./$d"
   dest="_build/html/$d"
 
-  echo "📂 Processing: $src → $dest"
-  mkdir -p "$dest"
-
-  files=("$src"/*)
-  if [ ${#files[@]} -gt 0 ]; then
-    cp -r "${files[@]}" "$dest/"
-    echo "✅ Copied: ${#files[@]} item(s)"
+  if [ -d "$src" ]; then
+    mkdir -p "$dest"
+    
+    files=("$src"/*)  # includes hidden files now due to dotglob
+    if [ ${#files[@]} -gt 0 ]; then
+      cp -r "$src"/* "$dest/"
+      echo "✅ Copied $d → $dest"
+    else
+      echo "⚠️  Skipped $d (empty)"
+    fi
   else
-    echo "⚠️  Skipped: $src is empty"
+    echo "❌ Missing source directory: $d"
   fi
 done
 
-# Clean up shell options
+# Restore globbing behavior
 shopt -u dotglob nullglob
 
 echo "🎯 Done."
