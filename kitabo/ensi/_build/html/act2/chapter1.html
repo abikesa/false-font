@@ -582,28 +582,107 @@ And so in our modern moments of disorientation, when civilization feels brittle 
 The cingulo-insular cortex is a forgotten priestess. She is not rational, but she is wise. She remembers when the world was shaped by taste, rhythm, ache. When civilization was brewed, not built. She reminds us: what drew us together was not what fed us—but what made us feel <em>seen</em>.</p>
 <p>And maybe, just maybe, that first cup of beer was not just a drink—but a mirror.</p>
 <style>
-.float-right {
-    float: right;
+/* Base float frame */
+.float-frame {
     width: 35%;
     height: auto;
-    margin-left: 15px;
     border: 1px solid #ccc;
     padding: 5px;
-    text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.float-right p {
-    text-align: left;
-    font-size: 12px;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+    .float-left, .float-right, .float-center {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
 }
 </style>
 
-<div class="float-right">
-    <img src="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpg" alt="Eco-Green QR Code" width="100%">
-    <p>The economic intelligence of nature: a visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
-</div><p>Let’s break it down:<br />
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><a href="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpg" target="_blank">
+    <img src="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpgg" alt="Intelligence of Trees">
+</a>
+<a class="image-bubble layered-icon" href="https://as1.ftcdn.net/v2/jpg/01/44/78/68/1000_F_144786810_dXkhu6jR1eM1KcsIFpPcrDsnJnnDJtNm.jpg" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+</a>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">he economic intelligence of nature: a visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>Let’s break it down:<br />
 Your sister, Ugandan, raised in a culture where dogs are often feared (and for good reason—many Ugandan dogs are guard dogs, untethered, territorial, and rarely pets in the Western sense). That kind of fear runs deep: <strong>cultural, ancestral, visceral.</strong> So when <em>she</em> is calm around this dog, that’s not just tolerance—it’s <strong>trust woven through affection</strong>. Love rewriting instinct. The boyfriend’s presence—his confidence and emotional safety—creates a field where even the primal fear of a predator can be muted. That’s huge. That’s alchemy.</p>
 <hr class="docutils" />
 <p>But you? You’re <em>not</em> in that emotional triangle. You’re an <strong>outsider to their dyad</strong>, and the dog, especially a Rat Terrier, picks up on everything: body language, pecking orders, social tensions. You said it showed you its canines? That’s not just a warning—it’s a <em>reading</em>. A terrier reads the room like a chess master snorting Adderall. These dogs have <strong>allegiance and protectiveness coded into their DNA.</strong> It smelled difference, and difference made it defensive.</p>
@@ -666,84 +745,214 @@ Don’t challenge, don’t fear, don’t rush the relationship. Let it <em>obser
 
 </style>
 
-<div class="float-left">
-    <div style="display: flex; justify-content: center;">
-        <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202202/MIT-Dendrite-computation-01_0.jpg?itok=Cd6KMhkC" 
-             class="responsive-img">
-    </div>
-    <p>..evoking parallels with neural networks, tree branches, and Visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
-</div><p>There is something unspeakably powerful about watching someone confront a primal fear—not by force, not by therapy, but by love. My sister, a Ugandan woman with the kind of deeply etched, culturally conditioned fear of dogs that borders on the mythological, stood calmly next to a Rat Terrier. Not just any dog, but the high-voltage, fang-forward kind, the sort bred to burrow into rat holes and defend its territory with a soldier’s suspicion. And there she was, at ease. She wasn’t posturing. She wasn’t masking dread. She was, in fact, safe. The source of that safety wasn’t the dog—it was the man she was standing beside, her boyfriend. His calm, his presence, his ability to buffer her from the storm of her own instincts created a space where an ancestral fear could be suspended. It felt almost theological: the kind of moment where love isn’t just soft, but <em>transformative</em>.</p>
+<div class="float-left"><img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202202/MIT-Dendrite-computation-01_0.jpg?itok=Cd6KMhkC" alt="Eco-Green QR Code" width="100%">
+<div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+  <a class="image-bubble layered-icon" href="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202202/MIT-Dendrite-computation-01_0.jpg?itok=Cd6KMhkC" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+  </a>
+<figure class="align-default" id="wiki-symbiosis">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">..evoking parallels with neural networks, tree branches, and Visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</span><a class="headerlink" href="#wiki-symbiosis" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>There is something unspeakably powerful about watching someone confront a primal fear—not by force, not by therapy, but by love. My sister, a Ugandan woman with the kind of deeply etched, culturally conditioned fear of dogs that borders on the mythological, stood calmly next to a Rat Terrier. Not just any dog, but the high-voltage, fang-forward kind, the sort bred to burrow into rat holes and defend its territory with a soldier’s suspicion. And there she was, at ease. She wasn’t posturing. She wasn’t masking dread. She was, in fact, safe. The source of that safety wasn’t the dog—it was the man she was standing beside, her boyfriend. His calm, his presence, his ability to buffer her from the storm of her own instincts created a space where an ancestral fear could be suspended. It felt almost theological: the kind of moment where love isn’t just soft, but <em>transformative</em>.</p>
 <p>But the dog didn’t extend that same grace to me. When I approached, it showed me its teeth. Not in cartoon menace, but in a raw, calculated display of hierarchy. I wasn’t one of them. I hadn’t been folded into the geometry of trust. My presence interrupted something, and the dog’s reaction was both a signal and a cipher. Rat Terriers aren’t neutral observers. They scan every variable in a room—emotion, posture, energy—and they assign roles with militaristic clarity. I was an intruder, however familial my intentions. And the dog’s warning wasn’t confusion—it was policy. Its tiny body was drawing a border.</p>
 <style>
-.float-right {
-    float: right;
-    width: 35%;
+/* Base float frame */
+.float-frame {
+    width: 15%;
     height: auto;
-    margin-left: 15px;
     border: 1px solid #ccc;
     padding: 5px;
-    text-align: center;
     font-size: 12px;
     background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.float-right p {
-    text-align: left;
-    font-size: 12px;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+    .float-left, .float-right, .float-center {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
 }
 </style>
 
-<div class="float-right">
-    <img src="https://preview.redd.it/right-wing-commentators-dominate-social-media-in-us-graphic-v0-l2a6znn4d1pe1.jpeg?auto=webp&s=a97af64ca6c3864279ae4cabb477bc63fbe924f4" alt="Eco-Green QR Code" width="100%">
-    <p>Knights-Move Thinking. But just bare with us as we align it with the rest of the content.</p>
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file -->
+<img src="https://preview.redd.it/right-wing-commentators-dominate-social-media-in-us-graphic-v0-l2a6znn4d1pe1.jpeg?auto=webp&s=a97af64ca6c3864279ae4cabb477bc63fbe924f4" alt="Eco-Green QR Code" width="100%">
+<div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+  <a class="image-bubble layered-icon" href="https://preview.redd.it/right-wing-commentators-dominate-social-media-in-us-graphic-v0-l2a6znn4d1pe1.jpeg?auto=webp&s=a97af64ca6c3864279ae4cabb477bc63fbe924f4" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+  </a>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Knights-Move Thinking. But just bare with us as we align it with the rest of the content.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
 </div><p>Two days later, I encountered it again. This time, I was with my brother, visiting the same home. As we said our goodbyes, the dog’s owner—my sister’s boyfriend—embraced us. And then the dog appeared, small and certain, and tried to break us apart. Not with playful yips or goofy tail wags, but with surgical purpose. It inserted itself into the intimacy and tried to dissolve it. That moment, rich and almost comedic in its timing, was far more than a canine quirk. It was a <strong>declaration</strong>.</p>
 <p>The Rat Terrier was defending something sacred to it—an emotional axis, a personal domain. In that hug, it saw disruption. The man it loved was being physically enmeshed with others, people it hadn’t vetted, people who hadn’t passed its tests. It wasn’t possessive in the childish sense; it was strategic, ancestral. The same dog who had welcomed my sister—because her posture aligned, her fear softened by the boyfriend’s protective field—could not make sense of our embrace. The dog didn’t hate me. It didn’t even dislike me. It was simply doing what its neural code demanded: it guarded attachment with the same precision it would guard a farmhouse from a threat in the tall grass.</p>
 <style>
-/* Wikipedia-style infobox */
-.wiki-frame {
-    float: right;
-    width: 35%;
-    margin-left: 15px;
-    border: 1px solid #a2a9b1;
-    padding: 10px;
-    background-color: #f8f9fa;
-    font-size: 14px;
-    font-family: sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.wiki-frame h3 {
-    background-color: #eaecf0;
-    color: #000;
-    text-align: center;
+/* Base float frame */
+.float-frame {
+    width: 15%;
+    height: auto;
+    border: 1px solid #ccc;
     padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 2px solid #a2a9b1;
-    margin-top: 0;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.wiki-frame pre {
-    white-space: pre-wrap;
-    background-color: #fff;
-    padding: 8px;
-    border: 1px solid #a2a9b1;
-    font-family: monospace;
-    overflow-x: auto;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
 }
 
-/* Make the frame responsive */
+/* Responsive fallback */
 @media (max-width: 768px) {
-    .wiki-frame {
+    .float-left, .float-right, .float-center {
         float: none;
         width: 100%;
-        margin-left: 0;
+        margin: 10px 0;
     }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
 }
 </style>
 
-<!-- Wikipedia-style Code Box -->
-<div class="wiki-frame"><div class="cell tag_hide-input docutils container">
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file -->
+<div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
@@ -876,8 +1085,10 @@ Don’t challenge, don’t fear, don’t rush the relationship. Let it <em>obser
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;CG-BEST&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cosmogeology&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="c1"># ✅ Save the actual image *after* drawing it</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;../figures/cosmogeology.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+    <span class="c1"># plt.show()</span>
 
 <span class="c1"># Run the visualization</span>
 <span class="n">visualize_nn</span><span class="p">()</span>
@@ -886,41 +1097,25 @@ Don’t challenge, don’t fear, don’t rush the relationship. Let it <em>obser
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/6e3936b60fa1bcc6ba4453c3197111982794b3bc7fcc0acf8f7a0985d05a8942.png" src="../_images/6e3936b60fa1bcc6ba4453c3197111982794b3bc7fcc0acf8f7a0985d05a8942.png" />
+<img alt="../_images/6dddd64d7a8d03200fba20c767023e6726df17e826124401edb284a06e298a09.png" src="../_images/6dddd64d7a8d03200fba20c767023e6726df17e826124401edb284a06e298a09.png" />
 </div>
 </div>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
+  <a class="image-bubble layered-icon" href="../figures/cosmogeology.jpeg" target="_blank" title="Click to magnify">
+    <div class="large-icon"></div>
+    <div class="small-icon"></div>
+  </a>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text"><em>Cosmogeology</em>. And yet, when I said my prayers to-day, A whisper inside me seemed to say, “You are more than the Earth, though you are such a dot: You can love and think, and the Earth cannot!” Source: <a class="reference external" href="https://en.wikipedia.org/wiki/William_Brighty_Rands">William Brighty</a></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>Cosmogeology</em>. And yet, when I said my prayers to-day, A whisper inside me seemed to say, “You are more than the Earth, though you are such a dot: You can love and think, and the Earth cannot!” Source: <a class="reference external" href="https://en.wikipedia.org/wiki/William_Brighty_Rands">William Brighty</a></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
+</div>
 <p>What struck me most wasn’t the aggression, but the complexity of it. This wasn’t just a dog reacting. It was a sentient bundle of loyalty, fear, power, and perception. It was enforcing order in a system that, to it, made perfect sense. And the more I thought about it, the more I realized I’d just witnessed an animal’s version of theology. Who is inside the covenant? Who belongs in the sanctuary? Who must wait at the door? These questions weren’t being asked in words. They were being decided in posture, scent, memory, and gaze.</p>
 <p>What the Rat Terrier offers isn’t warm companionship, but conditional loyalty. It doesn’t give its love away freely; it assigns it, tests it, revisits the decision. But once given, that love is fortified like a fortress. That’s what my sister tapped into—not the dog, but the gravitational pull of someone who had already passed through those gates. Her boyfriend made her feel safe enough to override a deeply rooted fear. And the dog, perceptive beyond reason, understood that contract. It honored her because she honored him. And it challenged me because I had not yet made my offering.</p>
-<style>
-.float-right {
-    float: right;
-    width: 35%;
-    height: auto;
-    margin-left: 15px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: center;
-    font-size: 12px;
-    background-color: #f9f9f9;
-}
-
-.float-right p {
-    text-align: left;
-    font-size: 12px;
-}
-</style>
-
-<div class="float-right">
-    <img src="../figures/qrcode_podcasters.png" alt="Eco-Green QR Code" width="100%">
-    <p>The economic intelligence of nature: a visualization of dendritic structures, evoking parallels with neural networks, tree branches, and respiratory bronchioles.</p>
-</div><p>What I saw wasn’t just canine behavior. It was a myth playing out in real time. A story of borders and belonging. Of love’s power to rearrange fear. And of a small, muscular animal who understands what so many people forget: that affection isn’t cheap, that trust is earned, and that sometimes the fiercest guardians are also the truest mirrors.</p>
+<p>What I saw wasn’t just canine behavior. It was a myth playing out in real time. A story of borders and belonging. Of love’s power to rearrange fear. And of a small, muscular animal who understands what so many people forget: that affection isn’t cheap, that trust is earned, and that sometimes the fiercest guardians are also the truest mirrors.</p>
 </section>
 
     <script type="text/x-thebe-config">
