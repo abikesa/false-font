@@ -23,7 +23,7 @@ EXCLUDED_NAMES = {
     ".git", ".ipynb_checkpoints", "__pycache__", "_build",
     "_toc.yml", "_config.yml", ".DS_Store"
 }
-EXCLUDED_SUFFIXES = {".ipynb", ".png", ".jpg", ".jpeg", ".gif", ".svg"}
+EXCLUDED_SUFFIXES = {".ipynb", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".html"}
 
 def random_tag():
     return ''.join(random.choices(string.ascii_letters + string.digits, k=4))
@@ -121,5 +121,4 @@ if __name__ == "__main__":
                         help="Random % of folders/files to flick (default: 100)")
     args = parser.parse_args()
     plant_flicks(BASE_DIR, percent=args.percent)
-# flick 20250409230606-6xkf
-# flick 20250409234309-S1qy
+    
