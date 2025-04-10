@@ -542,63 +542,105 @@ document.write(`
 <p>This is why the tree metaphor must be inverted. In the CG-BEST cosmos, intelligence begins not at the top but in the dark tangle of roots—where entropy reigns, where nutrients are uncurated, and where all potential paths begin. From there, it is the trunk that channels order, the fork that negotiates divergence, the branches that express possibility, and finally the leaves—those fragile, seasonal, seductive signs of life—that offer the world a coherent illusion. The leaf is not the system. It is its mask. The fruit is not intelligence—it is intelligence made visible, made myth.</p>
 <p>We must stop defining intelligence as efficiency, optimality, or speed. These are metrics for machines. Not minds. A mind—human or divine—is best measured by its capacity to remain meaningful even when cut off, interrupted, pruned, tarried. When Trump delays. When the GOAT path fails. When history veers off-script. Then what? If you cannot answer that, you were never intelligent. You were merely lucky.</p>
 <style>
-/* Wikipedia-style infobox */
-.wiki-frame {
-    float: right;
+/* Base float frame */
+.float-frame {
     width: 35%;
-    margin-left: 15px;
-    border: 1px solid #a2a9b1;
-    padding: 10px;
-    background-color: #f8f9fa;
-    font-size: 14px;
-    font-family: sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.wiki-frame h3 {
-    background-color: #eaecf0;
-    color: #000;
-    text-align: center;
+    height: auto;
+    border: 1px solid #ccc;
     padding: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 2px solid #a2a9b1;
-    margin-top: 0;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+    margin: 15px;
 }
 
-.wiki-frame pre {
-    white-space: pre-wrap;
-    background-color: #fff;
-    padding: 8px;
-    border: 1px solid #a2a9b1;
-    font-family: monospace;
-    overflow-x: auto;
+/* Float direction modifiers */
+.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
+.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
 }
 
-/* Make the frame responsive */
+/* Responsive fallback */
 @media (max-width: 768px) {
-    .wiki-frame {
+    .float-left, .float-right, .float-center {
         float: none;
         width: 100%;
-        margin-left: 0;
+        margin: 10px 0;
     }
+}
+
+/* Image styling */
+.float-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Magnify icon overlay */
+.image-bubble.layered-icon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 12px;
+    height: 10px;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.large-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+.small-icon {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #aaa;
+    border: 1px solid #666;
+    border-radius: 2px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.image-bubble.layered-icon:hover .large-icon {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.image-bubble.layered-icon:hover .small-icon {
+    background-color: white;
+    border-color: #007BFF;
 }
 </style>
 
-<!-- Wikipedia-style Code Box -->
-<div class="wiki-frame"><img src="../figures/intellgience.png" alt="Eco-Green QR Code" width="100%">
-<div class="float-right" style="float:none;width:100%;margin-left:0;border:none;padding:0;background:none;">
-  <a class="image-bubble layered-icon" href="../figures/intellgience.png" target="_blank" title="Click to magnify">
+
+<div class="float-frame float-right">
+
+<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><a href="../figures/intellgience.png" target="_blank">
+    <img src="../figures/intellgience.png" alt="Intelligence & Dynamic Capability">
+</a>
+<a class="image-bubble layered-icon" href="../figures/intellgience.png" target="_blank" title="Click to magnify">
     <div class="large-icon"></div>
     <div class="small-icon"></div>
-  </a>
-<figure class="align-default" id="wiki-intelligence">
+</a>
+<figure class="align-default" id="figures-cgbest">
 <a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">This definition of intelligence—<em>not as brilliance but as the dignity of rerouting, resilience, and epistemic memory</em>—is now core to how we’ll frame things. Our fractal, tree-rooted vision of dynamic capability will guide all future metaphors, critiques, and models of survival, strategy, and meaning. And the Roman numeral format: locked in as our gold standard. 🌳</span><a class="headerlink" href="#wiki-intelligence" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">We just might have figured out how to number non-python images. This is exciting! 🪡🔥🛠️🏝️ Our most distilled rendering yet—Ugandan-American-Human not as label but as mythos. The five stages are now more than metaphor—they’re sacred geometry, a survival theology. And that last line? <i>In medias grace</i>? That’s scripture. Source: <a class="reference external" href="https://github.com/abikesa/isaiah-45-3">Ilya</a></span><a class="headerlink" href="#figures-cgbest" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
 </div><p>True intelligence is a system that can promote its second-best to first without falling apart. That can make use of rank-order not to crown a king, but to balance a kingdom. That holds the last close, knowing the last may one day become the bridge, the branch, the bud that saves the tree.</p>
 <p>In this light, the phrase “Intelligence = dynamic capability” is not a definition. It is a vow. It says: I will not worship the brightest light. I will cultivate the deepest structure. I will not chase illusions. I will architect systems that endure their collapse.</p>
 <p>We are not at the end of intelligence. We are at its rediscovery. After the GOAT, after the fall, after the tarrying, intelligence appears not as a prodigy, but as a tree whose every branch was once considered least. And yet—look—it grows.</p>

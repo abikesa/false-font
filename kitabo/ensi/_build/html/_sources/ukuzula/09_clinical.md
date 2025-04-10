@@ -13,3 +13,4 @@ Tools designed for:
 # flick 20250410004923-PH2K
 # flick 20250410005849-FDZO
 # flick 20250410031441-hogm
+# flick 20250410032812-SOOE
